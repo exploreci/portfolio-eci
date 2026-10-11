@@ -618,3 +618,37 @@ footer {
   .project-tab { padding: 18px; }
   .tab-icon { width: 46px; height: 46px; }
 }
+
+
+/* ===== TAB COUNTER ===== */
+.tab-count {
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 3px 11px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--purple-dark);
+  font-size: .72rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .04em;
+  transition: background .25s ease, color .25s ease;
+}
+
+.project-tab.active .tab-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ===== ADMIN CARD ICON ===== */
+.admin-project-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  font-size: 26px;
+  transition: transform .25s ease;
+}
+
+.admin-project-card:hover .admin-project-icon {
+  transform: rotate(-6deg) scale(1.08);
+}
