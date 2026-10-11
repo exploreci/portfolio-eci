@@ -74,65 +74,185 @@
       </div>
     </section>
 
+
 <section id="projects" class="section">
-  <p class="eyebrow">PROJECTS</p>
+  <p class="eyebrow">PORTFOLIO</p>
   <h2 class="section-title">Things I've worked on</h2>
+  <p class="projects-intro">
+    Explore my work in software development and administrative
+    document management.
+  </p>
 
-  <article class="project-card">
-    <div class="project-number">01</div>
-    <div>
-      <p class="project-type">UNDERGRADUATE THESIS PROJECT</p>
+  <!-- Portfolio category selector -->
+  <div class="project-switcher" role="group" aria-label="Project category">
+    <button
+      class="project-tab active"
+      type="button"
+      data-target="software-projects"
+      aria-pressed="true">
+      <span class="tab-icon">{"</>"}</span>
+      <span class="tab-content">
+        <strong>Software Development</strong>
+        <small>Applications, programming & databases</small>
+      </span>
+      <span class="tab-arrow">↗</span>
+    </button>
 
-      <h3>SIPARIS</h3>
-      <h4>Digital Archiving Application Based on OCR and Rule-Based System</h4>
+    <button
+      class="project-tab"
+      type="button"
+      data-target="admin-projects"
+      aria-pressed="false">
+      <span class="tab-icon">▤</span>
+      <span class="tab-content">
+        <strong>Administration & Document Management</strong>
+        <small>Documents, data, reports & visual materials</small>
+      </span>
+      <span class="tab-arrow">↗</span>
+    </button>
+  </div>
 
+  <!-- SOFTWARE DEVELOPMENT PROJECTS -->
+  <div class="project-panel active" id="software-projects">
+
+    <article class="project-card">
+      <div class="project-number">01</div>
+      <div>
+        <p class="project-type">UNDERGRADUATE THESIS PROJECT</p>
+        <h3>SIPARIS</h3>
+        <h4>Digital Archiving Application Based on OCR and Rule-Based System</h4>
+
+        <p>
+          A web-based digital archiving application developed to support
+          incoming and outgoing correspondence management through digital
+          document storage and information extraction.
+        </p>
+
+        <div class="tags">
+          <span>Flutter Web</span>
+          <span>FastAPI</span>
+          <span>MySQL</span>
+          <span>Tesseract OCR</span>
+          <span>Rule-Based System</span>
+        </div>
+
+        <div class="project-details">
+          <div>
+            <strong>My Contribution</strong>
+            <p>
+              Developed the application, including interface design,
+              backend services, database integration, OCR, rule-based
+              processing, authentication, and document management.
+            </p>
+          </div>
+          <div>
+            <strong>Key Features</strong>
+            <p>
+              Role-based access, digital archiving, OCR information
+              extraction, document search, and disposition management.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-screenshots">
+          <img src="foto/dashboard.png" alt="SIPARIS dashboard">
+          <img src="foto/uploadsurat.png" alt="SIPARIS document upload">
+          <img src="foto/arsipmasuk.png" alt="SIPARIS incoming archive">
+          <img src="foto/disposisi.png" alt="SIPARIS disposition">
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/exploreci/ocr-based-digital-archive/"
+             target="_blank" rel="noopener">
+            View Repository ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Add your other programming projects here -->
+
+  </div>
+
+  <!-- ADMINISTRATION & DOCUMENT MANAGEMENT PROJECTS -->
+  <div class="project-panel" id="admin-projects" hidden>
+
+    <div class="admin-intro">
+      <p class="project-type">ADMINISTRATIVE WORK & DOCUMENTATION</p>
+      <h3>Organized information. Clear documentation.</h3>
       <p>
-        A web-based digital archiving application developed to support the management
-        of incoming and outgoing correspondence through digital document storage
-        and information extraction.
+        Examples of my skills in organizing documents, managing data,
+        preparing reports, and creating clear, professional materials.
       </p>
-
-      <div class="tags">
-        <span>Flutter Web</span>
-        <span>FastAPI</span>
-        <span>MySQL</span>
-        <span>Tesseract OCR</span>
-        <span>Rule-Based System</span>
-      </div>
-
-      <div class="project-details">
-        <div>
-          <strong>My Contribution</strong>
-          <p>
-            Developed the application end-to-end, including interface design,
-            backend services, database integration, OCR integration,
-            rule-based processing, authentication, document management,
-            and disposition features.
-          </p>
-        </div>
-
-        <div>
-          <strong>Key Features</strong>
-          <p>
-            Authentication and role-based access, digital archiving,
-            OCR-based information extraction, rule-based processing,
-            document search and retrieval, and disposition management.
-          </p>
-        </div>
-      </div>
-
-      <div class="project-screenshots">
-        <img src="foto/dashboard.png" alt="SIPARIS Dashboard">
-        <img src="foto/uploadsurat.png" alt="SIPARIS Document Archive">
-        <img src="foto/arsipmasuk.png" alt="SIPARIS OCR Extraction">
-        <img src="foto/disposisi.png" alt="SIPARIS Disposition">
-      </div>
-
-      <div class="project-links">
-        <a href="https://github.com/exploreci/ocr-based-digital-archive/" target="_blank">View Repository</a>
-      </div>
     </div>
-  </article>
+
+    <div class="admin-project-grid">
+
+      <article class="admin-project-card">
+        <div class="admin-project-icon">▤</div>
+        <p class="project-type">DOCUMENT MANAGEMENT</p>
+        <h3>Document Organization & Filing</h3>
+        <p>
+          Structured document registers, file naming conventions,
+          folder organization, and document tracking examples.
+        </p>
+        <div class="tags">
+          <span>PDF</span>
+          <span>Excel</span>
+          <span>Filing</span>
+        </div>
+        <p class="work-note">Sample work to be added</p>
+      </article>
+
+      <article class="admin-project-card">
+        <div class="admin-project-icon">▦</div>
+        <p class="project-type">DATA MANAGEMENT</p>
+        <h3>Data Entry & Spreadsheet Management</h3>
+        <p>
+          Organized spreadsheet examples for data entry, record keeping,
+          inventory tracking, and structured information management.
+        </p>
+        <div class="tags">
+          <span>Microsoft Excel</span>
+          <span>Data Entry</span>
+        </div>
+        <p class="work-note">Sample work to be added</p>
+      </article>
+
+      <article class="admin-project-card">
+        <div class="admin-project-icon">▧</div>
+        <p class="project-type">REPORTS & FORMATTING</p>
+        <h3>Document Formatting & Report Preparation</h3>
+        <p>
+          Examples of document formatting, consistent layouts,
+          structured reports, and professional page organization.
+        </p>
+        <div class="tags">
+          <span>Microsoft Word</span>
+          <span>PDF</span>
+          <span>Reporting</span>
+        </div>
+        <p class="work-note">Sample work to be added</p>
+      </article>
+
+      <article class="admin-project-card">
+        <div class="admin-project-icon">▣</div>
+        <p class="project-type">PRESENTATION & DESIGN</p>
+        <h3>Presentations & Visual Materials</h3>
+        <p>
+          Selected presentation slides, posters, and information materials
+          designed with attention to readability and visual consistency.
+        </p>
+        <div class="tags">
+          <span>PowerPoint</span>
+          <span>Presentation</span>
+          <span>Design</span>
+        </div>
+        <p class="work-note">Sample work to be added</p>
+      </article>
+
+    </div>
+  </div>
 </section>
 
     <section id="experience" class="section">
@@ -203,5 +323,32 @@
   <footer>
     <p>© 2026 Eci Wulandari. Built with HTML & CSS.</p>
   </footer>
+
+
+  
+<script>  
+const projectTabs = document.querySelectorAll(".project-tab");
+const projectPanels = document.querySelectorAll(".project-panel");
+
+projectTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const targetId = tab.dataset.target;
+
+    projectTabs.forEach((item) => {
+      const isActive = item === tab;
+
+      item.classList.toggle("active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+
+    projectPanels.forEach((panel) => {
+      const isActive = panel.id === targetId;
+
+      panel.hidden = !isActive;
+      panel.classList.toggle("active", isActive);
+    });
+  });
+});
+</script>
 </body>
 </html>
