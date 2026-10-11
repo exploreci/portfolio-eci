@@ -434,3 +434,89 @@ footer {
   .project-details, .skill-grid { grid-template-columns: 1fr; }
   .section { padding: 65px 20px; }
 }
+
+
+
+
+/* ===== FIX: PORTFOLIO CATEGORY COLORS ===== */
+
+.project-tab {
+  color: var(--text);
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+.project-tab:hover {
+  border-color: var(--purple);
+  box-shadow: 0 10px 28px rgba(86, 52, 119, 0.10);
+}
+
+.project-tab.active {
+  background: var(--soft);
+  border-color: var(--purple);
+  box-shadow: 0 0 0 1px var(--purple);
+}
+
+.tab-icon,
+.admin-project-icon {
+  background: var(--soft);
+  color: var(--purple-dark);
+}
+
+.tab-content small {
+  color: var(--muted);
+}
+
+.tab-arrow {
+  color: var(--purple);
+}
+
+.admin-intro > p:last-child {
+  color: var(--muted);
+}
+
+.admin-project-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(73, 48, 88, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(73, 48, 88, 0.09);
+}
+
+.admin-project-card > p:not(.project-type):not(.work-note) {
+  color: var(--muted);
+}
+
+.admin-project-card .tags {
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.admin-project-footer {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.admin-project-card .tags span {
+  background: var(--soft);
+  color: var(--purple-dark);
+}
+
+@media (max-width: 700px) {
+  .project-switcher,
+  .admin-project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
